@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Spectral&display=swap');
+
+:root {
+--heading-font: 'Montserrat', sans-serif;
+--paragraph-font: 'Spectral', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: steelblue;
+}
+
+header img {
+    margin-right: 15px;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+}
+
+nav {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 1rem;
+}
+  
+nav a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1.75em;
+}
+
+nav a:hover {
+    background-color: blue;
+}
+
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card li {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.card .number {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+h3 {
+    background-color: steelblue;
+    color: white;
+    padding: 10px;
+    border: 2px lightgray;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: steelblue;
+    color: white;
+}
