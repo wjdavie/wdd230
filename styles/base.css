@@ -17,7 +17,7 @@ header {
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    background-color: steelblue;
+    background-color: blue;
 }
 
 header img {
@@ -47,7 +47,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: blue;
+    background-color: steelblue;
 }
 
 main {
