@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Spectral&display=swap');
+
+:root {
+--heading-font: 'Montserrat', sans-serif;
+--paragraph-font: 'Spectral', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #074F57;
+    color: #F9F9F9;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 120x;
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #F5F5DC;
+    color: #3E2723;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    margin: 0;
+    background-color: #074F57;
+    color: #F9F9F9;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #074F57;
+    color: #F9F9F9;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+/* Media Queries */
+
+/* Small */
+@media (max-width:480px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Medium */
+@media (min-width: 481px) and (max-width: 768px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large */
+@media (min-width: 769px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
