@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanford Springvale Chamber of Commerce</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Wesley Davie - Sanford Springvale Chamber of Commerce Site">
+    <meta name="author" content="Wesley Davie">
+    <meta property="og:title" content="Sanford Springvale Chamber of Commerce" >
+    <meta property="og:type" content="website" >
+    <meta property="og:image" content="images/hero_sanford" >
+    <meta property="og:url" content="https://wjdavie.github.io/wdd230/chamber" >
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <div id="chamber-name">
+            <h1>Sanford Springvale Chamber of Commerce</h1>
+        </div>
+        <div id="member-login">
+            <h2>Member Login</h2>
+        </div>
+    </header>
+    <nav></nav>
+    <main>
+        <section class="hero">
+            <img src="images/hero_sanford.webp" alt="Sanford Maine Waterfall">
+            <div class="hero-overlay">
+                <h2>Become a Member Today!</h2>
+                <a href="join.html" class="cta-button">Join Now</a>
+            </div>
+        </section>
+
+        <section class="current-events">
+            <h2>Current Events</h2>
+            <ul>
+                <li><strong>Pumpkin Carving:</strong> Come and carve pumpkins in the park.</li>
+                <li><strong>Leadership Forum:</strong> Hear from other leaders in the community.</li>
+                <li><strong>Best Hiring Practices Training:</strong> Learn the skills to hire and retain the best employees.</li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Current Weather</h2>
+            <div class="weather-card">
+                <p>Temperature: 65&deg;</p>
+                <p>Partly cloudy with high gusts of wind.</p>
+            </div>
+        </section>
+
+        <section class="business-spotlights">
+            <h2>Business Spotlights</h2>
+            <div class="spotlight">
+                <h3>Dave's Widgets</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat quisquam odio fuga saepe sequi illo facere quidem corrupti quas nihil nemo natus qui voluptas tempore labore alias, hic quod sit.</p>
+            </div>
+            <div class="spotlight">
+                <h3>Franklin Sign Company</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis asperiores doloribus reiciendis voluptate, nesciunt quaerat est tempora provident, fugiat exercitationem, dolor in tempore officiis dicta blanditiis autem quas ipsa cupiditate.</p>
+            </div>
+            <div class="spotlight">
+                <h3>Pine Tree Accounting</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quasi excepturi dolores asperiores adipisci corrupti nulla alias laborum laboriosam natus. Beatae et rem deserunt, odit nihil distinctio tempore quaerat voluptates!</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><span id="currentYear"></span> Sanford Springvale Chamber of Commerce | Wesley Davie | WDD 230 Chamber Project | <span id="lastModified"></span> </p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>
