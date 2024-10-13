@@ -27,10 +27,10 @@ header {
 
 .navigation {
     background-color: var(--secondary-color);
-    position: relative;
 }
 
 .nav-links {
+    display: none;
     list-style-type: none;
     padding: .5rem;
     margin: 0;
@@ -40,10 +40,6 @@ header {
 
 .nav-links li {
     margin: 0 30px;
-}
-
-.nav-links.open {
-    display: block;
 }
 
 .nav-links a {
@@ -180,6 +176,10 @@ footer {
 
     .nav-links.open {
         display: flex;
+    }
+
+    .nav-links a:hover {
+        background-color: transparent;
     }
 
     #menu {
