@@ -155,16 +155,26 @@ header {
     color: #000000;
 }
 
+#social {
+    display: flex;
+    align-items: center;
+}
+
 .social-link {
-    color: #ffffff;
     margin: 0 10px;
     text-decoration: none;
     font-size: xx-large;
-    transition: transform 0.3s ease;
+    transition: transform 0.3 ease;;
 }
 
 .social-link:hover {
-    transform: scale(1.2) !important;
+    transform: scale(1.2);
+}
+
+.social-icon {
+    width: 30px;
+    height: auto;
+    filter: invert(1);
 }
 
 #dark-mode {
@@ -193,7 +203,7 @@ header {
     right: 0;
     bottom: 0;
     background-color: #ccc;
-    -webkit-transition: .4s;
+    transition: .4s;
     transition: .4s;
 }
 
@@ -205,7 +215,7 @@ header {
     left: 4px;
     bottom: 4px;
     background-color: #ffffff;
-    -webkit-transition: .4s;
+    transition: .4s;
     transition: .4s;
 }
 
@@ -218,8 +228,8 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    transform: translateX(26px);
     transform: translateX(26px);
 }
 
