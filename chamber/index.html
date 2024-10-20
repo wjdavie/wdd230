@@ -11,6 +11,7 @@
     <meta property="og:image" content="https://wjdavie.github.io/wdd230/chamber/images/hero_sanford.webp" >
     <meta property="og:url" content="https://wjdavie.github.io/wdd230/chamber" >
     <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -21,8 +22,20 @@
         <div id="chamber-name">
             <h1>Sanford Springvale Chamber of Commerce</h1>
         </div>
+        <div id="social">
+            <a href="https://www.facebook.com" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com" class="social-link"><i class="fab fa-twitter"></i></a>
+        </div>
         <div id="member-login">
             <a href="login.html" class="cta-button">Member Login</a>
+        </div>
+        <div id="dark-mode">
+            <label for="dark-mode-toggle" class="dark-mode-label">Dark Mode</label>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
         </div>
         <button type="button" id="menu"></button>
     </header>
@@ -85,5 +98,6 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/darkmode.js"></script>
 </body>
 </html>
