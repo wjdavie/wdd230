@@ -164,7 +164,6 @@ header {
     margin: 0 10px;
     text-decoration: none;
     font-size: xx-large;
-    transition: transform 0.3 ease;;
 }
 
 .social-link:hover {
