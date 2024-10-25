@@ -114,7 +114,7 @@ main {
     max-width: 90%;
 }
 
-.overlay h2 {
+.overlay h3 {
     font-size: 2vw;
     font-weight: 700;
 }
@@ -145,7 +145,7 @@ main {
     font-weight: bold;
 }
 
-h3 {
+.card h3 {
     background-color: blue;
     color: white;
     padding: 10px;
@@ -162,7 +162,7 @@ h1, h2, h3 {
     font-family: var(--heading-font);
 }
 
-h3::before {
+.card h3::before {
     content: "📖";
 }
 
