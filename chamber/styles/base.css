@@ -25,6 +25,15 @@ header {
     font-size: 1.50em;
 }
 
+#logo {
+    margin-right: 20px;
+}
+
+.logo {
+    max-height: auto;
+    width: auto;
+}
+
 .navigation {
     background-color: var(--secondary-color);
 }
@@ -93,8 +102,10 @@ header {
     right: 0;
     bottom: 0;
     color: #ffffff;
+    /* Changing display for the Week 06 Hero Image assignment
     display: flex;
-    flex-direction: column;
+    flex-direction: column; */
+    display: none;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -268,6 +279,12 @@ footer {
     padding: 5px;
 }
 
+@media (max-width: 480px) {
+    .small-overlay {
+        display: flex;
+    }
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -305,6 +322,10 @@ footer {
         padding: 10px;
     }
 
+    .medium-overlay {
+        display: flex;
+    }
+
     .hero-overlay h2 {
         font-size: 1.5em;
         padding: 0 10px;
@@ -313,5 +334,11 @@ footer {
     .hero-overlay .cta-button {
         padding: 10px 15px;
         font-size: 1em;
+    }
+}
+
+@media (min-width: 769px) {
+    .large-overlay {
+        display: flex;
     }
 }
