@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (input.value !='') {
             displayList(input.value);
-            chapterArray.push(input.value);
+            chaptersArray.push(input.value);
             setChapterList();
             input.value = '';
             input.focus();
