@@ -6,7 +6,7 @@ function displayVisitMessage() {
         document.getElementById('visit-message').innerText = "Welcome! Let us know if you have any questions.";
     } else {
         const lastVisitDate = new Date(lastVisit);
-        const timeDifference = currentVisit = lastVisitDate;
+        const timeDifference = currentVisit - lastVisitDate;
         const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
 
         if (daysDifference < 1) {
