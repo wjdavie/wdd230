@@ -1,0 +1,42 @@
+table {
+    border-collapse: collapse;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-size: small;
+}
+
+th {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid darkgray;
+    text-align: center;
+}
+
+thead th {
+    color: white;
+}
+
+thead tr:first-child th {
+    background-color: black;
+}
+
+thead tr:nth-child(2) th{
+    background-color: slategrey;
+}
+
+thead tr:nth-child(2) th:first-child {
+    background-color: black;
+}
+
+tbody tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+tbody td {
+    color: black;
+}
