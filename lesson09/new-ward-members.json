@@ -1,0 +1,40 @@
+{
+    "wardMembers": {
+        "familyName": "Johnson",
+        "moveInDate": "2024-11-01",
+        "numberInFamily": "6",
+        "bishopricVisit": true,
+        "familyMembers": [
+            {
+                "name": "Phil Johnson",
+                "gender": "Male",
+                "birthdate": "1975-05-20"
+            },
+            {
+                "name": "Julie Johnson",
+                "gender": "Female",
+                "birthdate": "1975-09-08"
+            },
+            {
+                "name": "Weston Johnson",
+                "gender": "Male",
+                "birthdate": "2003-01-15"
+            },
+            {
+                "name": "Porter Johnson",
+                "gender": "Male",
+                "birthdate": "2005-02-27"
+            },
+            {
+                "name": "Lexy Johnson",
+                "gender": "Female",
+                "birthdate": "2008-03-02"
+            },
+            {
+                "name": "Garrett Johnson",
+                "gender": "Male",
+                "birthdate": "2010-11-12"
+            }
+        ]
+    } 
+}
