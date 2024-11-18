@@ -19,7 +19,6 @@ const displayLinks = (weeks) => {
             let linkElement = document.createElement('a');
             linkElement.setAttribute('href', link.url);
             linkElement.textContent = link.title;
-            linkElement.setAttribute('target', '_blank');
 
             weekLesson.appendChild(linkElement);
         });
