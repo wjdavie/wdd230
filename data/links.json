@@ -5,7 +5,7 @@
         "links": [
             {
                 "url": "lesson01/holygrail.html",
-                "title": "Holygrail Activity"
+                "title": "Holygrail Activity "
             }
         ]
     },
@@ -14,15 +14,15 @@
         "links": [
             {
                 "url": "lesson02/design.html",
-                "title": "Design Principles Activity"
+                "title": "Design Principles Activity "
             },
             {
                 "url": "lesson02/media-query.html",
-                "title": "Media Queries"
+                "title": "Media Queries "
             },
             {
                 "url": "lesson02/design-principles.html",
-                "title": "Design Principles Document"
+                "title": "Design Principles Document "
             }
         ]
     },
@@ -31,15 +31,15 @@
         "links": [
             {
                 "url": "https://wjdavie.github.io/wdd230/images/combinators.webp",
-                "title": "Combinators Activity"
+                "title": "Combinators Activity "
             },
             {
                 "url": "https://codepen.io/Wesley-Davie/pen/KKOMwpY",
-                "title": "Pseudo-Elements Activity"
+                "title": "Pseudo-Elements Activity "
             },
             {
                 "url": "https://codepen.io/Wesley-Davie/pen/PoMzwjd",
-                "title": "Hamburger Menu Activity"
+                "title": "Hamburger Menu Activity "
             }
         ]
     },
@@ -48,7 +48,7 @@
         "links": [
             {
                 "url": "https://codepen.io/Wesley-Davie/pen/MWNjxOQ",
-                "title": "Pseudo-Classes Activity"
+                "title": "Pseudo-Classes Activity "
             }
         ]
     },
@@ -57,11 +57,11 @@
         "links": [
             {
                 "url": "lesson05/dom.html",
-                "title": "DOM Activity"
+                "title": "DOM Activity "
             },
             {
                 "url": "lesson05/bom.html",
-                "title": "Favorite Book of Mormon Chapters Assignment"
+                "title": "Favorite Book of Mormon Chapters Assignment "
             }
         ]
     },
@@ -70,11 +70,11 @@
         "links": [
             {
                 "url": "https://wjdavie.github.io/wdd230/lesson06/images/landscape.webp",
-                "title": "WebP Activity"
+                "title": "WebP Activity "
             },
             {
                 "url": "lesson06/responsive-images.html",
-                "title": "Responsive Images Activity"
+                "title": "Responsive Images Activity "
             }
         ]
     },
@@ -83,11 +83,11 @@
         "links": [
             {
                 "url": "lesson07/lazyload.html",
-                "title": "Lazy Loading Activity"
+                "title": "Lazy Loading Activity "
             },
             {
                 "url": "lesson07/bom.html",
-                "title": "Updated Book of Mormon Assignment"
+                "title": "Updated Book of Mormon Assignment "
             }
         ]
     },
@@ -96,15 +96,15 @@
         "links": [
             {
                 "url": "lesson08/tablebuild.html",
-                "title": "Table Build Activity"
+                "title": "Table Build Activity "
             },
             {
                 "url": "lesson08/index.html",
-                "title": "HTML Forms Assignment"
+                "title": "HTML Forms Assignment "
             },
             {
                 "url": "https://wjdavie.github.io/wdd230/form.html",
-                "title": "Form Build Assignment"
+                "title": "Form Build Assignment "
             }
         ]
     },
@@ -113,11 +113,11 @@
         "links": [
             {
                 "url": "lesson09/new-ward-members.json",
-                "title": "JSON Activity"
+                "title": "JSON Activity "
             },
             {
                 "url": "lesson09/prophets.html",
-                "title": "Fetch API Activity"
+                "title": "Fetch API Activity "
             }
         ]
     },
