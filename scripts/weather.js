@@ -25,7 +25,8 @@ apiFetch();
 function displayResults(data) {
     const temp = Math.round(data.main.temp); //Round the temperature
     currentTemp.innerHTML = `${temp}&deg;F`;
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    const iconCode = data.weather[0]?.icon;
+    const iconsrc = iconCode? `https://openweathermap.org/img/w/${data.weather[0].icon}.png` : 'images/weather.png';
     const descriptions = data.weather.map(item => item.description); //Get all descriptions
     const capDescriptions = descriptions.map(desc =>
         desc.split(' ') //Capitalize all words in the description
