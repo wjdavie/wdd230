@@ -32,7 +32,7 @@ function displayResults(data) {
         .map(word => word.charAt(0).toUpperCase() + word.slice(1))
         .join(' ')
     );
-    const finalDescription = capDescriptions.join(', ');
+    const finalDescription = capDescriptions.join(', ') || 'Weather Icon';
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', finalDescription);
     captionDesc.textContent = finalDescription;
