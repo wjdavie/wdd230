@@ -25,16 +25,13 @@ apiFetch();
 function displayResults(data) {
     const temp = Math.round(data.main.temp); //Round the temperature
     currentTemp.innerHTML = `${temp}&deg;F`;
-    const iconCode = data.weather[0]?.icon;
-    const iconsrc = iconCode? `https://openweathermap.org/img/w/${data.weather[0].icon}.png` : 'images/weather.png';
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     const descriptions = data.weather.map(item => item.description); //Get all descriptions
-    const capDescriptions = descriptions.map(desc =>
-        desc.split(' ') //Capitalize all words in the description
+    let desc = data.weather[0].description;
+    desc = desc.split(' ') //Capitalize all words in the description
         .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(' ')
-    );
-    const finalDescription = capDescriptions.join(', ') || 'Weather Icon';
+        .join(' ');
     weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', finalDescription);
-    captionDesc.textContent = finalDescription;
+    weatherIcon.setAttribute('alt', desc);
+    captionDesc.textContent = desc;
 }
