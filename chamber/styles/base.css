@@ -420,6 +420,11 @@ h1 {
         display: flex;
     }
 
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     #menu {
         display: block;
         font-size: 1.5rem;
