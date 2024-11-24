@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanford Springvale Chamber of Commerce - Join Page</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Wesley Davie - Sanford Springvale Chamber of Commerce Join Page">
+    <meta name="author" content="Wesley Davie">
+    <meta property="og:title" content="Sanford Springvale Chamber of Commerce" >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://wjdavie.github.io/wdd230/chamber/images/hero_sanford.webp" >
+    <meta property="og:url" content="https://wjdavie.github.io/wdd230/chamber" >
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="images/logo.webp" alt="Sanford Springvale Chamber of Commerce Logo" class="logo">
+        </div>
+        <div id="chamber-name">
+            <h1>Sanford Springvale Chamber of Commerce</h1>
+        </div>
+        <div id="social">
+            <a href="https://www.facebook.com" class="social-link">
+                <img src="images/facebook-f.svg" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com" class="social-link">
+                <img src="images/instagram.svg" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.twitter.com" class="social-link">
+                <img src="images/twitter.svg" alt="Twitter" class="social-icon">
+            </a>
+        </div>
+        <div id="member-login">
+            <a href="login.html" class="cta-button">Member Login</a>
+        </div>
+        <div id="dark-mode">
+            <label for="dark-mode-toggle" class="dark-mode-label">Dark Mode</label>
+            <label class="switch">
+                <input type="checkbox" id="dark-mode-toggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <button type="button" id="menu"></button>
+    </header>
+    <nav class="navigation" >
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav> 
+    <main>
+        <h1>Join the Chamber of Commerce</h1>
+        <div class="form-container">
+            <form method="get" action="thankyou.html" class="webform">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                    <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                    <label>Title/Position* <input type="text" name="title" id="title" required pattern="[A-Za-z\s\-]{7,}" title="Valid entry will be at least 7 characters and only contain letters, spaces, and hyphens. " ></label>
+                    <label>Email* <input type="email" name="email" id="email" placeholder="email@gmail.com" required></label>
+                    <label>Phone* <input type="tel" name="phone" id="phone" required></label>
+                    <label>Business/Organization Name* <input type="text" name="org" id="org" required></label>
+                    <label>Membership Level 
+                        <select name="membership">
+                            <option value="">Please Select an Option Below &#9662</option>
+                            <option value="nonprofit">NP Membership - No fee(for non-profit organizations)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    <label>Business/Organization Description <textarea name="odesc" id="odesc"></textarea></label>
+                    <label><input type="hidden" name="dttm" id="dttm"></label>
+                </fieldset>
+
+                <button type="submit" class = "form-button">Submit Application</button>
+            </form>
+
+            <aside class="member-benefits">
+                <h2>Membership Level & Benefits:</h2>
+                <div class="benefit-level">
+                    <h3>NP Membership</h3>
+                    <p>Only for non-profit organizations</p>
+                    <p>No annual fee</p>
+                    <p>Basic listing in the directory, access to community events.</p>
+                </div>
+                <div class="benefit-level">
+                    <h3>Bronze Membership</h3>
+                    <p>$500 per year</p>
+                    <p>Discounted event tickets, business directory listing, access to networking events. </p>
+                </div>
+                <div class="benefit-level">
+                    <h3>Silver Membership</h3>
+                    <p>$750 per year</p>
+                    <p>Includes all Bronze benefits, plus priority event space, and spotlight listing on the website. </p>
+                </div>
+                <div class="benefit-level">
+                    <h3>Gold Membership</h3>
+                    <p>$1000 per year</p>
+                    <p>Includes all Silver benefits, plus free promotional advertising on the website and priority access to special events. </p>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <p><span id="currentYear"></span> Sanford Springvale Chamber of Commerce | Wesley Davie | WDD 230 Chamber Project | <span id="lastModified"></span> </p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>
