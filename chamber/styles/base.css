@@ -419,6 +419,25 @@ h1 {
     .small-overlay {
         display: flex;
     }
+
+    #menu {
+        display: none;
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #ffffff;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+    
+    #menu::before {
+        content: "☰";
+    }
+    
+    #menu.open::before {
+        content: "❌";
+    }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
