@@ -167,6 +167,10 @@ h3::before {
     content: "📖";
 }
 
+iframe {
+    border: none;
+}
+
 .weather::before {
     content: "🌡 ";
 }
