@@ -471,6 +471,11 @@ h1 {
     font-size: 16px;
 }
 
+.member-directory h2 {
+    text-align: center;
+    font-size: x-large;
+}
+
 @media (max-width: 480px) {
     .small-overlay {
         display: flex;
