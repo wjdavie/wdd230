@@ -4,11 +4,11 @@ const display = document.querySelector("#member-directory");
 
 async function fetchMemberData() {
     try {
-        const respone = await fetch("data/members.json");
+        const response = await fetch("data/members.json");
         if (!respone.ok) {
             throw new Error("Network error");
         }
-        const memberData = await Response.json();
+        const memberData = await response.json();
         renderCards(memberData);
         return memberData;
     } catch (error) {
@@ -59,8 +59,8 @@ gridbutton.addEventListener("click", () => {
 });
 
 listbutton.addEventListener("click", () => {
-    display.classList.add("grid");
-    display.classList.remove("list");
+    display.classList.add("list");
+    display.classList.remove("grid");
     renderCards(memberData);
 });
 
