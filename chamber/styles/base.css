@@ -415,6 +415,35 @@ h1 {
     margin-bottom: 50px;
 }
 
+.member-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px;
+    display: inline-block;
+    width: calc(33% - 32px);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.member-image {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.member-directory.list {
+    display: block;
+}
+
+.member-directory.list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.member-directory.list li {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
 @media (max-width: 480px) {
     .small-overlay {
         display: flex;

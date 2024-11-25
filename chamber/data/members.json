@@ -1,0 +1,109 @@
+{
+    "members": [
+        {
+            "name": "Dave's Widgets",
+        "address": {
+            "street": "123 Pine St", 
+            "street 2": "Suite 109",
+            "city": "Sanford",
+            "state": "ME",
+            "zip": "04073"
+        },
+        "phone_number": "207-555-1234",
+        "website_url": "www.daveswidgets.com",
+        "image_file": "images/daveswidgets.webp",
+        "membership_level": "Gold",
+        "member_start_date": "April, 2023"
+        },
+        {
+            "name": "Franklin Sign Company",
+        "address": {
+            "street": "456 Oak Ave", 
+            "street 2": "",
+            "city": "Sanford",
+            "state": "ME",
+            "zip": "04073"
+        },
+        "phone_number": "207-555-2345",
+        "website_url": "www.franklinsign.com",
+        "image_file": "images/franklinsign.webp",
+        "membership_level": "Silver",
+        "member_start_date": "August, 2022"
+        },
+        {
+            "name": "Pine Tree Accounting",
+        "address": {
+            "street": "789 Birch Rd", 
+            "street 2": "#190",
+            "city": "Springvale",
+            "state": "ME",
+            "zip": "04083"
+        },
+        "phone_number": "207-555-3456",
+        "website_url": "www.pinetreeme.com",
+        "image_file": "images/pinetree.webp",
+        "membership_level": "Gold",
+        "member_start_date": "November, 2021"
+        },
+        {
+            "name": "Chickadee Credit Union",
+        "address": {
+            "street": "101 Maple Blvd", 
+            "street 2": "Suite 20",
+            "city": "Sanford",
+            "state": "ME",
+            "zip": "04073"
+        },
+        "phone_number": "207-555-4567",
+        "website_url": "www.chickadee.com",
+        "image_file": "images/chickadee.webp",
+        "membership_level": "NP",
+        "member_start_date": "July, 2020"
+        },
+        {
+            "name": "Black Bear Towing",
+        "address": {
+            "street": "404 Willow Way", 
+            "street 2": "",
+            "city": "Springvale",
+            "state": "ME",
+            "zip": "04083"
+        },
+        "phone_number": "207-555-5678",
+        "website_url": "www.bbtowing.com",
+        "image_file": "images/blackbear.webp",
+        "membership_level": "Bronze",
+        "member_start_date": "March, 2019"
+        },
+        {
+            "name": "Maine Plumbing",
+        "address": {
+            "street": "456 Main St", 
+            "street 2": "#9",
+            "city": "Sanford",
+            "state": "ME",
+            "zip": "04073"
+        },
+        "phone_number": "207-555-6789",
+        "website_url": "www.meplumber.com",
+        "image_file": "images/maineplumbing.webp",
+        "membership_level": "Silver",
+        "member_start_date": "June, 2018"
+        },
+        {
+            "name": "Winnie's Donuts",
+        "address": {
+            "street": "202 Main St", 
+            "street 2": "Suite W",
+            "city": "Sanford",
+            "state": "ME",
+            "zip": "04073"
+        },
+        "phone_number": "207-555-7890",
+        "website_url": "www.winniedonut.com",
+        "image_file": "images/winniesdonuts.webp",
+        "membership_level": "Gold",
+        "member_start_date": "January, 2017"
+        }
+    ]
+}
