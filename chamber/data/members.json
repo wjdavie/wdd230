@@ -13,7 +13,7 @@
         "website_url": "www.daveswidgets.com",
         "image_file": "images/daveswidgets.webp",
         "membership_level": "Gold",
-        "member_start_date": "April, 2023"
+        "member_start_date": "April 2023"
         },
         {
             "name": "Franklin Sign Company",
@@ -28,7 +28,7 @@
         "website_url": "www.franklinsign.com",
         "image_file": "images/franklinsign.webp",
         "membership_level": "Silver",
-        "member_start_date": "August, 2022"
+        "member_start_date": "August 2022"
         },
         {
             "name": "Pine Tree Accounting",
@@ -43,7 +43,7 @@
         "website_url": "www.pinetreeme.com",
         "image_file": "images/pinetree.webp",
         "membership_level": "Gold",
-        "member_start_date": "November, 2021"
+        "member_start_date": "November 2021"
         },
         {
             "name": "Chickadee Credit Union",
@@ -58,7 +58,7 @@
         "website_url": "www.chickadee.com",
         "image_file": "images/chickadee.webp",
         "membership_level": "NP",
-        "member_start_date": "July, 2020"
+        "member_start_date": "July 2020"
         },
         {
             "name": "Black Bear Towing",
@@ -73,7 +73,7 @@
         "website_url": "www.bbtowing.com",
         "image_file": "images/blackbear.webp",
         "membership_level": "Bronze",
-        "member_start_date": "March, 2019"
+        "member_start_date": "March 2019"
         },
         {
             "name": "Maine Plumbing",
@@ -88,7 +88,7 @@
         "website_url": "www.meplumber.com",
         "image_file": "images/maineplumbing.webp",
         "membership_level": "Silver",
-        "member_start_date": "June, 2018"
+        "member_start_date": "June 2018"
         },
         {
             "name": "Winnie's Donuts",
@@ -103,7 +103,7 @@
         "website_url": "www.winniedonut.com",
         "image_file": "images/winniesdonuts.webp",
         "membership_level": "Gold",
-        "member_start_date": "January, 2017"
+        "member_start_date": "January 2017"
         }
     ]
 }
