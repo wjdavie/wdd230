@@ -23,7 +23,7 @@ function renderCards(memberData) {
         const card = document.createElement("div");
         card.classList.add("member-card");
         card.innerHTML = `
-        <img src="${member.image_file}" alt="${member.name}" class="member-image">
+        <img src="${member.image_file}" alt="${member.name}" loading="lazy" class="member-image">
         <h2>${member.name}</h2>
         <p>${member.address.street} ${member.address['street 2'] ? member.address['street 2'] + ',' : ''}${member.address.city}, ${member.address.state} ${member.address.zip}</p>
         <p><i>Phone:</i> ${member.phone_number}</p>
