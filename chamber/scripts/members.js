@@ -24,7 +24,7 @@ function renderCards(memberData) {
         card.classList.add("member-card");
         card.innerHTML = `<img src="${member.image_file}" alt="${member.name}" class="member-image">
         <h2>${member.name}</h2>
-        <p>${member.address.street} ${member.address.['street 2'] ? member.address['street 2'] + ',' : ''}${member.address.city}, ${member.address.state} ${member.address.zip}</p>
+        <p>${member.address.street} ${member.address['street 2'] ? member.address['street 2'] + ',' : ''}${member.address.city}, ${member.address.state} ${member.address.zip}</p>
         <p>Phone: ${member.phone_number}</p>
         <p><a href="https://${member.website_url}" target="_blank">Visit Website</a></p>
         <p>Membership Level: ${member.membership_level}</p>
