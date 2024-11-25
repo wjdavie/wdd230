@@ -28,7 +28,7 @@ function renderCards(memberData) {
         <p>Phone: ${member.phone_number}</p>
         <p><a href="https://${member.website_url}" target="_blank">Visit Website</a></p>
         <p>Membership Level: ${member.membership_level}</p>
-        <p>Membership Start Date: ${member.member_start_date}`;
+        <p>Membership Start Date: ${member.member_start_date}</p>`;
 
         display.appendChild(card);
     });
@@ -52,19 +52,18 @@ function renderList(memberData) {
     display.appendChild(ul);
 }
 
-gridbutton.addEventListener("click", () => {
-    display.classList.add("grid");
-    display.classList.remove("list");
-    renderCards(memberData);
-});
-
-listbutton.addEventListener("click", () => {
-    display.classList.add("list");
-    display.classList.remove("grid");
-    renderCards(memberData);
-});
-
-let memberData;
 fetchMemberData().then(data => {
     memberData = data;
+
+    gridbutton.addEventListener("click", () => {
+        display.classList.add("grid");
+        display.classList.remove("list");
+        renderCards(memberData);
+    });
+
+    listbutton.addEventListener("click", () => {
+        display.classList.add("list");
+        display.classList.remove("grid");
+        renderCards(memberData);
+    });
 });
