@@ -80,6 +80,10 @@
         <div class="main-content">
             <section class="current-events">
                 <h2>Current Events</h2>
+                <div id="event-banner" class="banner">
+                    <button id="close-banner" class="close-banner">❌</button>
+                    <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 pm!</p>
+                </div>
                 <ul>
                     <li><strong>Pumpkin Carving:</strong> Come and carve pumpkins in the park.</li>
                     <li><strong>Leadership Forum:</strong> Hear from other leaders in the community.</li>
@@ -88,11 +92,27 @@
             </section>
 
             <section class="weather">
-                <h2>Current Weather</h2>
+                <h2>Weather Forecast</h2>
                 <div class="weather-card">
-                    <p>Temperature: <span class="temperature">40</span></p>
-                    <p>Wind Speed: <span class="wind-speed">5.5</span></p>
+                    <h3>Current Weather</h3>
+                    <p>Temperature: <span id="current-temp"></span></p>
+                    <p>Wind Speed: <span class="wind-speed"></span> mph</p>
                     <p>Wind Chill: <span class="wind-chill"></span>&deg;F</p>
+                    <p>Weather Conditions: <span id="conditions"></span></p>
+                    <figure>
+                        <figcaption></figcaption>
+                        <img id="weather-icon" src="images/weather.png" alt="Weather Icon">
+                    </figure>
+                </div>
+
+                <div class="forecast">
+                    <h3>3-Day Forecast</h3>
+                    <p><strong>Tomorrow: </strong></p>
+                    <p>Temperature: <span id="tomorrow-temp"></span>&deg;F</p>
+                    <p><strong>Day After Tomorrow: </strong></p>
+                    <p>Temperature: <span id="dayafter-temp"></span>&deg;F</p>
+                    <p><strong>Day After Next: </strong></p>
+                    <p>Temperature: <span id="next-temp"></span>&deg;F</p>
                 </div>
             </section>
 
@@ -121,6 +141,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburgermenu.js"></script>
     <script src="scripts/darkmode.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>

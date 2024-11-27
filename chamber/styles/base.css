@@ -146,6 +146,35 @@ header {
     padding: 20px;
 }
 
+.banner {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.50em;
+}
+
+.banner p {
+    margin: 0;
+    padding-left: 50px;
+    flex-grow: 1;;
+    display: inline-block;
+    align-items: center;
+}
+
+.close-banner {
+    background: white;
+    border: none;
+    font-size: 1em;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.close-banner:hover {
+    color: var(--secondary-color);
+}
+
 .grid-layout {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -161,6 +190,11 @@ header {
     margin-bottom: 20px;
     margin-top: 20px;
     margin-left: 15px;
+}
+
+.weather h2, .current-events h2 {
+    margin-top: 0;
+    text-align: center;
 }
 
 .main-images {
