@@ -1,6 +1,7 @@
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("#member-directory");
+const spotlightContainer = document.querySelector(".spotlights-container");
 
 async function fetchMemberData() {
     try {
@@ -10,6 +11,7 @@ async function fetchMemberData() {
         }
         const memberData = await response.json();
         renderCards(memberData);
+        renderSpotlight(memberData);
         return memberData;
     } catch (error) {
         console.error("Failed to fetch member data:", error);
@@ -55,6 +57,32 @@ function renderList(memberData) {
     });
 
     display.appendChild(ul);
+}
+
+function renderSpotlight(memberData) {
+    const spotlightMembers = memberData.members.filter(member => member.membership_level === "Silver" || member.membership_level === "Gold");
+    const selectedMembers = getRandomMembers(spotlightMembers, 3);
+
+    spotlightContainer.innerHTML = "";
+    selectedMembers.forEach(member => {
+        const spotlightItem = document.createElement("div");
+        spotlightItem.classList.add("spotlight");
+        spotlightItem.innerHTML = `
+            <img src="${member.image_file}" alt="${member.name}" loading="lazy" class="member-image">
+            <h3>${member.name}</h3>
+            <p>${member.address.street} ${member.address['street 2'] ? member.address['street 2'] + ',' : ''}${member.address.city}, ${member.address.state} ${member.address.zip}</p>
+            <p><i>Phone:</i> ${member.phone_number}</p>
+            <p>https://${member.website_url}</p>
+            <p><i>Membership Level:</i> ${member.membership_level}</p>
+            <p><i>Membership Start Date:</i> ${member.member_start_date}</p>`;
+
+        spotlightContainer.appendChild(spotlightItem);
+    });
+}
+
+function getRandomMembers(members, num) {
+    const shuffled = [...members].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, num);
 }
 
 fetchMemberData().then(data => {
