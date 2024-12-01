@@ -229,14 +229,16 @@ header {
 }
 
 .spotlights-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-around;
+    margin: 0 auto;
     padding: 20px;
 }
 
 .spotlight {
-    display: block;
+    width: 100%;
     border: 2px solid var(--secondary-color);
     border-radius: 8px;
     text-align: center;
@@ -249,14 +251,7 @@ header {
     width: 100%;
     height: auto;
     border-radius: 8px;
-}
-
-.spotlight h3 {
-    margin-top: 15px;
-}
-
-.spotlight .cta-button {
-
+    object-fit: cover;
 }
 
 #social {
@@ -587,6 +582,11 @@ h1 {
         font-size: 1.2em;
     }
 
+    .spotlight {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -648,6 +648,11 @@ h1 {
         width: 100%;
         padding: 5px 0;
     }
+
+    .spotlight {
+        flex: 1 1 45%;
+        max-width: calc(50% - 20px);
+    }
 }
 
 @media (min-width: 769px) {
@@ -672,5 +677,10 @@ h1 {
     .main-images img:hover {
         transform: scale(1.05);
         box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .spotlight {
+        flex: 1 1 30%;
+        max-width: calc(33.33% - 20px);
     }
 }
