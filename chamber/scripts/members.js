@@ -6,6 +6,7 @@ const spotlightContainer = document.querySelector(".spotlights-container");
 async function fetchMemberData() {
     try {
         const response = await fetch("data/members.json");
+        console.log("Fetched member data: ", memberData);
         if (!response.ok) {
             throw new Error("Network error");
         }
@@ -60,6 +61,7 @@ function renderList(memberData) {
 }
 
 function renderSpotlight(memberData) {
+    if (!spotlightContainer) return;
     const spotlightMembers = memberData.members.filter(member => member.membership_level === "Silver" || member.membership_level === "Gold");
     const selectedMembers = getRandomMembers(spotlightMembers, 3);
 
