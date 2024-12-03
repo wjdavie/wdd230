@@ -5,7 +5,6 @@ const display = document.querySelector("#member-directory");
 async function fetchMemberData() {
     try {
         const response = await fetch("data/members.json");
-        console.log("Fetched member data: ", response);
         if (!response.ok) {
             throw new Error("Network error");
         }

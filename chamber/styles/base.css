@@ -222,37 +222,67 @@ header {
 
 .business-spotlights {
     grid-column: 1 / -1;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
     background-color: var(--primary-color);
+    color: #ffffff;
+    margin-top: 50px;
+}
+
+.business-spotlights h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
     color: #ffffff;
 }
 
 .spotlights-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    justify-content: space-around;
-    margin: 0 auto;
+    justify-content: center;
     padding: 20px;
 }
 
 .spotlight {
     width: 100%;
+    max-width: 300px;
     border: 2px solid var(--secondary-color);
     border-radius: 8px;
     text-align: center;
     background-color: #ffffff;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .spotlight img {
     width: 100%;
-    height: auto;
+    height: 200px;
     border-radius: 8px;
     object-fit: cover;
+    transition: transform 0.3s ease;
 }
+
+.spotlight:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.spotlight:hover img {
+    transform: scale(1.1);
+}
+
+.spotlight h3 {
+    font-size: 1.5em;
+    color: var(--primary-color);
+    margin-top: 15px;
+}
+
+.spotlight p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
 
 #social {
     display: flex;
@@ -313,7 +343,6 @@ header {
     left: 4px;
     bottom: 4px;
     background-color: #ffffff;
-    transition: .4s;
     transition: .4s;
 }
 
@@ -582,11 +611,19 @@ h1 {
         font-size: 1.2em;
     }
 
-    .spotlight {
-        flex: 1 1 100%;
-        max-width: 100%;
+    .business-spotlights {
+        padding: 20px;
     }
 
+    .spotlights-container {
+        grid-template-columns: 1fr;
+    }
+
+    .spotlight {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -649,9 +686,15 @@ h1 {
         padding: 5px 0;
     }
 
+    .spotlights-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
     .spotlight {
-        flex: 1 1 45%;
-        max-width: calc(50% - 20px);
+        width: 100%;
+        max-width: 45%;
+        margin: 0 auto;
     }
 }
 
@@ -679,8 +722,13 @@ h1 {
         box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
 
+    .spotlights-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
     .spotlight {
-        flex: 1 1 30%;
-        max-width: calc(33.33% - 20px);
+        max-width: 100%;
+        width: 100%;
     }
 }
