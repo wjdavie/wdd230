@@ -192,6 +192,28 @@ header {
     margin-left: 15px;
 }
 
+.weather {
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+}
+
+.weather-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.weather-card, .forecast {
+    border: 1px solid var(--primary-color);
+}
+
+.current-weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .weather h2, .current-events h2 {
     margin-top: 0;
     text-align: center;
