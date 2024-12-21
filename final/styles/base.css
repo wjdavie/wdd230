@@ -156,7 +156,6 @@ header {
     font-family: var(--heading-font);
     font-size: 1.5em;
     font-weight: bold;
-    transition: color 0.3 ease;
 }
 
 .nav-links a:hover {
@@ -458,7 +457,6 @@ footer {
     cursor: pointer;
     display: inline-block;
     text-align: center;
-    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .form-button:hover {
@@ -544,7 +542,6 @@ footer {
     cursor: pointer;
     display: inline-block;
     text-align: center;
-    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .form-button:hover {
