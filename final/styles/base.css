@@ -31,6 +31,7 @@ button:hover {
 
 header {
     background-color: var(--primary-color);
+    color: var(--secondary-color);
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
@@ -64,6 +65,7 @@ header {
     cursor: pointer;
     padding: 0;
     font-weight: bold;
+    background-color: white;
 }
 
 #close-banner:hover {
@@ -238,7 +240,7 @@ header {
 .rental-options, .rental-pricing, .rental-header {
     background-color: var(--secondary-color);
     padding: 5px 5px;
-    color: var(--primary-color);
+    color: #ffffff;
     text-align: center;
 }
 
@@ -330,7 +332,7 @@ header {
     margin-top: 10px;
     text-align: center;
     background-color: var(--primary-color);
-    color: #ffffff;
+    color: #342862;
     padding: 20px;
 }
 
