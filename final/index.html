@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots Recreational Vehichle Rental Compnany</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Wesley Davie - Final Project - Scoots Recreational Vehichle Rental Site">
+    <meta name="author" content="Wesley Davie">
+    <meta property="og:title" content="Scoots Recreational Vehichle Rental Compnany" >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://wjdavie.github.io/wdd230/final/images/beach_pexels.webp" >
+    <meta property="og:url" content="https://wjdavie.github.io/wdd230/final" >
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <div id="temp-banner" class="banner">
+            <button id="close-banner" class="close-banner">❌</button>
+            <p>Today's high temperature: <span id="high-temp"></span>&deg;F </p>
+        </div>
+        <div class="header-content">
+            <div class="header-column">
+                <img src="images/facility_oobscooterrentals.webp" alt="Scooters for rent" class="header-image" loading="lazy">
+            </div>
+            <div class="logo-column">
+                <div id="logo">
+                    <img src="images/logo-svg.svg" alt="Scoots Recreational Vehichle Rental Compnany Logo" class="logo" loading="lazy">
+                </div>
+                <div id="company-info">
+                    <p>1515 Scooter Drive</p>
+                    <p>Cozumel, Q.R. 77600, Mexico</p>
+                    <p>Phone: +52 555 555 3210 </p>
+                </div>
+            </div>
+            <div class="header-column">
+                <img src="images/facility2_madbeachscooters.jpg" alt="Scoots Rental Facility" class="header-image" loading="lazy">
+            </div>
+        </div>
+    </header>
+    <nav class="navigation" >
+        <button id="menu" class="hamburger-menu">&#9776;</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav> 
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/beach_pexels_small.webp" media="(max-width:480px)">
+                <source srcset="images/beach_pexels_medium.webp" media="(max-width: 768px)">
+                <img src="images/beach_pexels.webp" alt="Sanford Maine Waterfall" loading="lazy">
+            </picture>
+            
+            <div class="hero-overlay">
+                <h2>Adventure Awaits!</h2>
+                <a href="reservations.html" class="cta-button">Reserve Vehicle</a>
+            </div>
+        </section>
+        <div class="main-content">
+            <section class="page-header">
+                <h1>SCOOTS</h1>
+            </section>
+            <section class="rental-options">
+                <h2>Rental Options</h2>
+                <div class="rental-grid">
+                    <div class="rental-item scooter-list">
+                        <h3><strong>Honda Motor Scooters</strong></h3>
+                        <ul>
+                            <li>Honda Metropolitan (49cc) - 1 person</li>
+                            <li>Honda Dio (110cc) - 2 person</li>
+                            <li>Honda PCX150 (149cc) - 2 person</li>
+                        </ul>
+                    </div>
+                    <div class="rental-image scooter-image">
+                        <img src="images/metro.webp" alt="Honda Scooter" loading="lazy">
+                    </div>
+                    <div class="rental-image atv-image">
+                        <img src="images/atv.webp" alt="Honda Side-by-Side" loading="lazy">
+                    </div>
+                    <div class="rental-item atv-list">
+                        <h3><strong>Side-by-Side ATVs</strong></h3>
+                        <ul>
+                            <li>Honda Pioneer 1000 - 4 person</li>
+                        </ul>
+                    </div>
+                    <div class="rental-item jeep-list">
+                        <h3><strong>Jeeps</strong></h3>
+                        <ul>
+                            <li>Jeep Wrangler - 4 door manual with A/C - 5 person</li>
+                            <li>Jeep Wrangler - 2 door - open air - manual - 4 person</li>
+                        </ul>
+                    </div>
+                    <div class="rental-image jeep-image">
+                        <img src="images/wrangler.webp" alt="Jeep Wrangler" loading="lazy">
+                    </div>
+                </div>
+            </section>
+            <section class="weather">
+                <h2>Weather Forecast</h2>
+                <div class="weather-card">
+                    <h3>Current Weather</h3>
+                    <p>Temperature: <span id="current-temp"></span></p>
+                    <p>Humidity: <span class="humidity"></span></p>
+                    <p>Weather Conditions: <span id="conditions"></span></p>
+                    <figure>
+                        <figcaption></figcaption>
+                        <img id="weather-icon" src="images/weather.png" alt="Weather Icon">
+                    </figure>
+                    <p>Tomorrow's Forecast: <span id="tomorrow-temp"></span></p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p><span id="currentYear"></span> | SCOOTS - Recreational Vehicle Rentals | Wesley Davie | WDD 230 Final Project | <span id="lastModified"></span> </p>
+        <div id="social">
+            <a href="https://www.facebook.com" class="social-link">
+                <img src="images/facebook-f.svg" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com" class="social-link">
+                <img src="images/instagram.svg" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.twitter.com" class="social-link">
+                <img src="images/twitter.svg" alt="Twitter" class="social-icon">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
+</body>
+</html>

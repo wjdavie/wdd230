@@ -1,0 +1,82 @@
+{
+    "rentals": [
+        {
+            "name": "Honda Metro Scooter",
+            "max": "1",
+            "reservation": {
+                "half": "$20", 
+                "full": "$30"
+            },
+            "Walk-in": {
+                "half": "25",
+                "full": "35"
+            },
+            "image": "images/metro.webp"
+        },
+        {
+            "name": "Honda Dio Scooter",
+            "max": "2",
+            "reservation": {
+                "half": "$30", 
+                "full": "$40"
+            },
+            "Walk-in": {
+                "half": "35",
+                "full": "45"
+            },
+            "image": "images/dio.webp"
+        },
+        {
+            "name": "Honda PCX150 Scooter",
+            "max": "2",
+            "reservation": {
+                "half": "$40", 
+                "full": "$50"
+            },
+            "Walk-in": {
+                "half": "45",
+                "full": "55"
+            },
+            "image": "images/pcx150.webp"
+        },
+        {
+            "name": "Honda Pioneer ATV",
+            "max": "4",
+            "reservation": {
+                "half": "$50", 
+                "full": "$70"
+            },
+            "Walk-in": {
+                "half": "60",
+                "full": "80"
+            },
+            "image": "images/atv.webp"
+        },
+        {
+            "name": "Jeep Wrangler - 4 door with a/c",
+            "max": "5",
+            "reservation": {
+                "half": "$70", 
+                "full": "$100"
+            },
+            "Walk-in": {
+                "half": "85",
+                "full": "125"
+            },
+            "image": "images/wrangler.webp"
+        },
+        {
+            "name": "Jeep Wrangler - 2 door",
+            "max": "4",
+            "reservation": {
+                "half": "$60", 
+                "full": "$85"
+            },
+            "Walk-in": {
+                "half": "70",
+                "full": "90"
+            },
+            "image": "images/jeep2door.webp"
+        }
+    ]
+}

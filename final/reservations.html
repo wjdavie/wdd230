@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots Recreational Vehichle Rental Compnany - Reservations Page</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Wesley Davie - Final Project - Scoots Recreational Vehichle Rental Site - Reservations Page">
+    <meta name="author" content="Wesley Davie">
+    <meta property="og:title" content="Scoots Recreational Vehichle Rental Compnany - Reservations Page" >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://wjdavie.github.io/wdd230/final/images/beach_pexels.webp" >
+    <meta property="og:url" content="https://wjdavie.github.io/wdd230/final" >
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-column">
+                <img src="images/facility_oobscooterrentals.webp" alt="Scooters for rent" class="header-image" loading="lazy">
+            </div>
+            <div class="logo-column">
+                <div id="logo">
+                    <img src="images/logo-svg.svg" alt="Scoots Recreational Vehichle Rental Compnany Logo" class="logo" loading="lazy">
+                </div>
+                <div id="company-info">
+                    <p>1515 Scooter Drive</p>
+                    <p>Cozumel, Q.R. 77600, Mexico</p>
+                    <p>Phone: +52 555 555 3210 </p>
+                </div>
+            </div>
+            <div class="header-column">
+                <img src="images/facility2_madbeachscooters.jpg" alt="Scoots Rental Facility" class="header-image" loading="lazy">
+            </div>
+        </div>
+    </header>
+    <nav class="navigation" >
+        <button id="menu" class="hamburger-menu">&#9776;</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav> 
+    <main>
+        </section>
+        <div class="reservations-page">
+            <section class="page-header">
+                <h1>Reservations</h1>
+            </section>
+            <section class="rental-agreement">
+                <h2>Rental Services and Agreements</h2>
+                <p>Please review the terms and conditions below before making a reservation. </p>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations. </li>
+                    <li>A valid drivers license is required in hand at the time of rental. </li>
+                    <li>No one under the age of 12 years of age are allowed to ride on the scooters. </li>
+                    <li>No one under the age of 12 years of age are allowed to ride on the scooters. </li>
+                    <li>No one under the age of 12 years of age are allowed to ride on the scooters. </li>
+                    <li>Fuel charge is not included. </li>
+                    <li>Unlimited mileage. </li>
+                    <li>Liability insurance is included. </li>
+                    <li>Damage insurance is available for purchase. </li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals. </li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo. </li>
+                    <li>Rentals may be returned to either physical location. </li>
+                </ul>
+            </section>
+            <section class="reservation-form">
+                <h2>Make a Reservation</h2>
+                <form method="get" action="thankyou.html" class="webform">
+                    <fieldset>
+                        <legend>User Information</legend>
+                        <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                        <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                        <label>Email* <input type="email" name="email" id="email" placeholder="email@gmail.com" required></label>
+                        <label>Phone* <input type="tel" name="phone" id="phone" required></label>
+                        <label>Home State/Country* <input type="text" name="home" id="home" required></label>
+                        <label>Cruise Line (If applicable) <input type="text" name="cruise" id="cruise"></label>
+                        <label>Rental Type 
+                            <select name="rentaltype">
+                                <option value="">Please Select an Option Below &#9662;</option>
+                                <option value="metro">Honda Metro Scooter</option>
+                                <option value="dio">Honda Dio Scooter</option>
+                                <option value="pcx150">Honda PCX 150 Scooter</option>
+                                <option value="atv">Honda Pioneer ATV</option>
+                                <option value="wrangler2">Jeep Wrangler 2 Door</option>
+                                <option value="wrangler4">Jeep Wrangler 4 Door</option>
+                            </select>
+                        </label>
+                        <label>Quantity* <input type ="number" name="qty" id="qty" required></label>
+                        <label>Rental Period
+                            <select name="period">
+                                <option value="">Please Select an Option Below &#9662;</option>
+                                <option value="half-day">Half Day</option>
+                                <option value="full-day">Full Day</option>
+                            </select>
+                        </label>
+                        <label>Reservation Date* <input type="date" name="dt" id="dt" required></label>
+                        <label>Special Accomodations/Comments <textarea name="comments" id="comments"></textarea></label>
+                    </fieldset>
+                    <button type="submit" class = "form-button">Complete Reservation</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p><span id="currentYear"></span> | SCOOTS - Recreational Vehicle Rentals | Wesley Davie | WDD 230 Final Project | <span id="lastModified"></span> </p>
+        <div id="social">
+            <a href="https://www.facebook.com" class="social-link">
+                <img src="images/facebook-f.svg" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com" class="social-link">
+                <img src="images/instagram.svg" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.twitter.com" class="social-link">
+                <img src="images/twitter.svg" alt="Twitter" class="social-icon">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+</body>
+</html>

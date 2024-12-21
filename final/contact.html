@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots Recreational Vehichle Rental Compnany - Contacts Page</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Wesley Davie - Final Project - Scoots Recreational Vehichle Rental Site - Contacts Page">
+    <meta name="author" content="Wesley Davie">
+    <meta property="og:title" content="Scoots Recreational Vehichle Rental Compnany - Contacts Page" >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://wjdavie.github.io/wdd230/final/images/beach_pexels.webp" >
+    <meta property="og:url" content="https://wjdavie.github.io/wdd230/final" >
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-column">
+                <img src="images/facility_oobscooterrentals.webp" alt="Scooters for rent" class="header-image" loading="lazy">
+            </div>
+            <div class="logo-column">
+                <div id="logo">
+                    <img src="images/logo-svg.svg" alt="Scoots Recreational Vehichle Rental Compnany Logo" class="logo" loading="lazy">
+                </div>
+                <div id="company-info">
+                    <p>1515 Scooter Drive</p>
+                    <p>Cozumel, Q.R. 77600, Mexico</p>
+                    <p>Phone: +52 555 555 3210 </p>
+                </div>
+            </div>
+            <div class="header-column">
+                <img src="images/facility2_madbeachscooters.jpg" alt="Scoots Rental Facility" class="header-image" loading="lazy">
+            </div>
+        </div>
+    </header>
+    <nav class="navigation" >
+        <button id="menu" class="hamburger-menu">&#9776;</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav> 
+    <main>
+        </section>
+        <section class="page-header">
+            <h1>We Want to Hear From You!</h1>
+        </section>
+        <div class="contacts-page">
+            <div class="contact-info">
+                <h2>SCOOTS</h2>
+                <p>1515 Scooter Drive </p>
+                <p>Cozumel, Q.R. 77600, Mexico</p>
+                <p>Phone: +52 555 555 3210</p>
+                <p>Email: reservations@scoots.com</p>
+            </div>
+            <div class="contact-form">
+                <form method="get" action="thankyou.html" class="webform">
+                    <fieldset>
+                        <legend>Contact Us</legend>
+                        <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                        <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                        <label>Email* <input type="email" name="email" id="email" placeholder="email@gmail.com" required></label>
+                        <label>Comments <textarea name="comments" id="comments"></textarea></label>
+                    </fieldset>
+                    <button type="submit" class = "form-button">Submit</button>
+                </form>
+            </div>
+            <section class="google-map">
+                <h2>Cozumel Location</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d170214.56776596417!2d-86.9783624461637!3d20.466727125555792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e1!3m2!1sen!2sus!4v1734748093784!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p><span id="currentYear"></span> | SCOOTS - Recreational Vehicle Rentals | Wesley Davie | WDD 230 Final Project | <span id="lastModified"></span> </p>
+        <div id="social">
+            <a href="https://www.facebook.com" class="social-link">
+                <img src="images/facebook-f.svg" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com" class="social-link">
+                <img src="images/instagram.svg" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.twitter.com" class="social-link">
+                <img src="images/twitter.svg" alt="Twitter" class="social-icon">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+</body>
+</html>
