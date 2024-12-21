@@ -496,7 +496,12 @@ footer {
     font-size: 1.5em;
 }
 
-.contact-info, .google-map h2 {
+.contact-info {
+    color: #ffffff;
+    text-align: center;
+}
+
+.google-map h2 {
     color: var(--secondary-color);
     text-align: center;
 }
@@ -588,5 +593,94 @@ iframe {
 
     .hamburger-menu {
         display: block;
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero-overlay {
+        font-size: 2.5em;
+        padding: 15%;
+        padding-bottom: 30%;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    .rental-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "scooter-list"
+            "scooter-image"
+            "atv-list"
+            "atv-image"
+            "jeep-list"
+            "jeep-image";
+    }
+
+    .rental-item {
+        font-size: 1.2em;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-overlay {
+        font-size: 2.8em;
+        padding: 15%;
+        padding-bottom: 20%;
+    }
+
+    .cta-button {
+        font-size: 1.2em;
+        padding: 10px 20px;
+    }
+
+    .rental-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) {
+    .header-content {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .hero-overlay {
+        font-size: 3.5em;
+        padding: 10%;
+        padding-bottom: 20%;
+    }
+
+    .cta-button {
+        font-size: 1.4em;
+        padding: 12px 24px;
+    }
+
+    .rental-grid {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
